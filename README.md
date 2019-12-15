@@ -1,4 +1,5 @@
-##MEVSIM SIMuLATOR
+##MEVSIM SIMULATOR
+
     Belirli bir bölgedeki kara, deniz, hava canlılarının mevsim mevsim beslenme, yaşama ve ölüm olaylarının
     simüle edilmesini amaçlar. İlkbahar, Yaz, Sonbahar, Kış olmak üzere 4 adet mevsim simülasyon edilecektir.
     Her mevsimin sıcaklık koşulları kara, deniz ve hava için farklı farklıdır. Mevsim en düşük ve en yüksek sıcaklıkları
@@ -7,6 +8,7 @@
     normal değeri için aralıklar aşağıda tanımlanmıştır.
     
 ####MEVSİMLER
+
     Simulasyonda 4 mevsim simule edilecektir. Mevsimler sırasıyla Ilkbahar, Yaz, Sonbahar, Kıs'dır. Her mevsimin minimum ve maksimum sıcaklık degerleri
     asagidaki gibi tanimlidir. Mevsim normalleri ise kullanıcı tarafindan girilmelidir. Mevsim sicakliklari karada, denizde ve havada farkli sekilde seyreder. Kullanici
     3 ortam icinde mevsim normallerini girmelidir. Bir mevsim icin her gun ortam sicakligi (Kara, Deniz, Hava icin ayri ayri) hesaplanmalidir. Hesaplanma su kritere gore
@@ -28,6 +30,7 @@
         Ucuncu aralik : [normal_sicaklik + 5/2, 30] --> Olasilik %25
         
 #####Ilkbahar
+
         Uzunluk: 90 gün
         Karada:
             Minimum Sıcaklık: 15.5
@@ -48,6 +51,7 @@
             Maximum Sıcaklık: 26
  
 #####Yaz
+
         Uzunluk: 90 gün
         Karada:
             Minimum Sıcaklık: 35.3
@@ -67,6 +71,7 @@
                 * Kabul edilebilir aralık = [Min.Sıcaklık + 5, Max.Sıcaklık - 5]
             Maximum Sıcaklık: 38.3     
 #####Sonbahar
+
         Uzunluk: 90 gün
         Karada:
             Minimum Sıcaklık: 11.7
@@ -86,6 +91,7 @@
                 * Kabul edilebilir aralık = [Min.Sıcaklık + 3, Max.Sıcaklık - 3]
             Maximum Sıcaklık: 18.6
 #####Kış
+
         Uzunluk: 90 gün
         Karada:
             Minimum Sıcaklık: -10.5
@@ -106,6 +112,7 @@
             Maximum Sıcaklık: 8
  
 ###CANLILAR
+
     Bölgede yaşayan canlılar Kara Canlıları, Deniz Canlıları ve Hava Canlıları olmak üzere üç gruba ayrılmaktadır. Her bir
     canlı grubunda 2 ayrı tür bulunmaktadır. Tüm türler aşağıda sıralanmıştır. Tüm canlılar ortamda bulunan (kara, deniz, hava
     için ayrı ayrı) besinden belirli aralıklarla beslenirler. Olumsuz sıcaklık koşulları ve açlık durumlarından etkilenerek
@@ -156,6 +163,7 @@
     simülasyona dahil edilmelidir ve Kara, Deniz, Hava ortamları için besin miktarları belirlenmelidir.
     
 ####Kara Canlıları
+
     + İnsan
         - feedingPeriod: Günde bir
         - feedingPercent: %5
@@ -197,6 +205,7 @@
         - recyclingPercentAfterDeath: %77
     
 ####Deniz Canlıları
+
     + Balina
         - feedingPeriod: Haftada bir
         - feedingPercent: %34
@@ -216,6 +225,7 @@
         - maxStarvationPeriod: 1 Hafta
         - bodyWeight: 1200
         - recyclingPercentAfterDeath: %93
+        
     + Köpekbalığı
         - feedingPeriod: 4 günde bir
         - feedingPercent: %25
@@ -237,6 +247,7 @@
         - recyclingPercentAfterDeath: %67
     
 ####Hava Canlıları
+
     + Sinekkuşu
         - feedingPeriod: Günde bir
         - feedingPercent: %2
@@ -256,6 +267,7 @@
         - maxStarvationPeriod: 3 Gün
         - bodyWeight: 0,5
         - recyclingPercentAfterDeath: %40
+        
     + Kartal
         - feedingPeriod: 3 Günde bir
         - feedingPercent: %13
