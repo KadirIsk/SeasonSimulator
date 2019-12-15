@@ -1,0 +1,12 @@
+package enumTypes.validation;
+
+public enum ValidationStatus {
+    CORRECT,
+    NULL_INPUT,
+    EMPTY_INPUT,
+    INCORRECT_INPUT_TYPE,
+    UNKNOWN_INPUT_TYPE,
+    INCORRECT_INPUT_LENGTH,
+    INCORRECT_INPUT_RANGE,
+    INCORRECT_OPERATION_REQUEST
+}
